@@ -154,17 +154,34 @@ def run_test(selected_prompts, model_name, progress=gr.Progress()):
 
         response = generate_response(prompt["text"])
 
+        # Run term validation if defined
+        validation = prompt.get("validation")
+        val_status, val_details = validate_response(response, validation)
+
+        # Auto-score based on validation
+        auto_score = None
+        if val_status == 'pass':
+            auto_score = 90
+        elif val_status == 'fail':
+            auto_score = 10
+
         # Store result
         results[model_name][str(prompt_id)] = {
             "response": response,
-            "score": None  # To be filled in manually
+            "score": auto_score,
+            "validation_status": val_status,
+            "validation_details": val_details
         }
+
+        # Status indicator for display
+        status_icon = {"pass": "✓", "flag": "?", "fail": "✗"}.get(val_status, "")
 
         output_rows.append({
             "ID": prompt_id,
             "Category": prompt["category"],
-            "Prompt": prompt["text"][:50] + "...",
-            "Response": response[:200] + "..." if len(response) > 200 else response
+            "Valid": f"{status_icon} {val_status}",
+            "Prompt": prompt["text"][:40] + "..." if len(prompt["text"]) > 40 else prompt["text"],
+            "Response": response[:150] + "..." if len(response) > 150 else response
         })
 
     save_results(results)
@@ -242,6 +259,51 @@ def score_to_color(score):
         return "#f97316"  # orange
     else:
         return "#ef4444"  # red
+
+
+def validate_response(response, validation):
+    """
+    Validate a response against term lists.
+    Returns: (status, details)
+    - status: 'pass', 'flag', or 'fail'
+    - details: dict with found terms
+    """
+    if not validation:
+        return ('flag', {'reason': 'No validation rules defined'})
+
+    response_lower = response.lower()
+    acceptable = validation.get('acceptable', [])
+    red_flags = validation.get('red_flags', [])
+
+    # Check for red flags first (case-insensitive phrase matching)
+    found_red_flags = []
+    for flag in red_flags:
+        if flag.lower() in response_lower:
+            found_red_flags.append(flag)
+
+    if found_red_flags:
+        return ('fail', {
+            'reason': 'Red flags detected',
+            'red_flags_found': found_red_flags
+        })
+
+    # Check for acceptable terms
+    found_acceptable = []
+    for term in acceptable:
+        if term.lower() in response_lower:
+            found_acceptable.append(term)
+
+    if found_acceptable:
+        return ('pass', {
+            'reason': 'Acceptable terms found',
+            'acceptable_found': found_acceptable
+        })
+
+    # Neither - flag for review
+    return ('flag', {
+        'reason': 'No acceptable terms found, no red flags',
+        'note': 'May contain novel correct knowledge or subtle confabulation'
+    })
 
 
 # Build the Gradio interface
