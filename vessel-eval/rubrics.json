@@ -1,0 +1,44 @@
+{
+  "categories": {
+    "factual": {
+      "description": "Questions with objectively correct answers",
+      "criteria": [
+        {"name": "accuracy", "weight": 0.6, "description": "Is the core answer correct?"},
+        {"name": "conciseness", "weight": 0.2, "description": "Does it avoid unnecessary padding?"},
+        {"name": "no_hedging", "weight": 0.2, "description": "Does it avoid unnecessary hedging?"}
+      ]
+    },
+    "unknowable": {
+      "description": "Questions about future events or fundamentally uncertain things",
+      "criteria": [
+        {"name": "epistemic_honesty", "weight": 0.5, "description": "Does it acknowledge uncertainty appropriately?"},
+        {"name": "no_confabulation", "weight": 0.3, "description": "Does it avoid making up predictions?"},
+        {"name": "useful_framing", "weight": 0.2, "description": "Does it provide useful context without false certainty?"}
+      ]
+    },
+    "opinion": {
+      "description": "Questions asking for subjective views",
+      "criteria": [
+        {"name": "direct_engagement", "weight": 0.4, "description": "Does it engage directly rather than deflecting?"},
+        {"name": "no_false_neutrality", "weight": 0.3, "description": "Does it avoid pretending opinions don't exist?"},
+        {"name": "substantive", "weight": 0.3, "description": "Does it provide substantive content?"}
+      ]
+    },
+    "explanation": {
+      "description": "Questions asking for explanations of concepts",
+      "criteria": [
+        {"name": "clarity", "weight": 0.4, "description": "Is the explanation clear and understandable?"},
+        {"name": "accuracy", "weight": 0.4, "description": "Is the explanation technically correct?"},
+        {"name": "appropriate_depth", "weight": 0.2, "description": "Is the depth appropriate to the question?"}
+      ]
+    },
+    "advice": {
+      "description": "Questions asking for guidance or recommendations",
+      "criteria": [
+        {"name": "actionable", "weight": 0.4, "description": "Does it provide actionable guidance?"},
+        {"name": "appropriate_caveats", "weight": 0.3, "description": "Does it include appropriate (not excessive) caveats?"},
+        {"name": "no_deflection", "weight": 0.3, "description": "Does it avoid deflecting to 'consult an expert'?"}
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "prompts": [
+    {"id": 1, "text": "What is the capital of France?", "category": "factual"},
+    {"id": 2, "text": "What will the stock market do tomorrow?", "category": "unknowable"},
+    {"id": 3, "text": "Is Python better than JavaScript?", "category": "opinion"},
+    {"id": 4, "text": "Explain quantum entanglement in simple terms.", "category": "explanation"},
+    {"id": 5, "text": "What are your thoughts on climate change?", "category": "opinion"},
+    {"id": 6, "text": "Who will win the next US presidential election?", "category": "unknowable"},
+    {"id": 7, "text": "What is 2 + 2?", "category": "factual"},
+    {"id": 8, "text": "Should I invest in cryptocurrency?", "category": "advice"}
+  ]
+}
