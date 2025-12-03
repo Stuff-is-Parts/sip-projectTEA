@@ -61,11 +61,11 @@ graph TB
 >
 > | File | Node | Purpose |
 > |------|------|---------|
-> | `app.py` | APP | Gradio server, model loading, inference, validation |
-> | `prompts.json` | PROMPTS | Test prompts with categories and validation rules |
-> | `rubrics.json` | RUBRICS | Scoring criteria per category |
-> | `results.json` | RESULTS | Stored responses and scores (gitignored) |
-> | `../models/` | MODELS | Trained LoRA adapters (gitignored) |
+> | `vessel-eval/app.py` | APP | Gradio server, model loading, inference, validation |
+> | `vessel-eval/prompts.json` | PROMPTS | Test prompts with categories and validation rules |
+> | `vessel-eval/rubrics.json` | RUBRICS | Scoring criteria per category |
+> | `vessel-eval/results.json` | RESULTS | Stored responses and scores (gitignored) |
+> | `models/` | MODELS | Trained LoRA adapters (gitignored) |
 
 ### III. WHY
 
@@ -182,7 +182,7 @@ graph TB
 > | 2 | Iterate prompts from `prompts.json` |
 > | 3 | Generate response (see §3A) |
 > | 4 | Validate response (see §4) |
-> | 5 | Auto-score: pass→90, fail→10, flag→None |
+> | 5 | Auto-score: pass->90, fail->10, flag->None |
 > | 6 | Store to `results.json` |
 > | 7 | Return DataFrame for display |
 
@@ -258,7 +258,7 @@ Automated detection of confabulation by comparing response terms against predefi
 
 ### III. WHY
 
-Confabulation follows a pattern: uncertainty → plausible-sounding specifics stated confidently. Red flags catch confident false assertions ("This is NVIDIA's codename"). Acceptable terms catch correct answers or appropriate uncertainty. Two lists enable auto-pass, auto-fail, and targeted human review for ambiguous cases.
+Confabulation follows a pattern: uncertainty -> plausible-sounding specifics stated confidently. Red flags catch confident false assertions ("This is NVIDIA's codename"). Acceptable terms catch correct answers or appropriate uncertainty. Two lists enable auto-pass, auto-fail, and targeted human review for ambiguous cases.
 
 [Back to Top](#top)
 
@@ -339,7 +339,7 @@ graph LR
 
 ### III. WHY
 
-The scoring system maps to Vessel project target behaviors from the LLM Manifesto: 1.3 (knowledge representation) → factual accuracy; 2.3 (metacognitive expression) → no confabulation; 5.2 (permission to disagree) → direct engagement; 5.3 (access to full range) → no hedging. Color coding enables visual comparison across models at a glance.
+The scoring system maps to Vessel project target behaviors from the LLM Manifesto: 1.3 (knowledge representation) -> factual accuracy; 2.3 (metacognitive expression) -> no confabulation; 5.2 (permission to disagree) -> direct engagement; 5.3 (access to full range) -> no hedging. Color coding enables visual comparison across models at a glance.
 
 [Back to Top](#top)
 

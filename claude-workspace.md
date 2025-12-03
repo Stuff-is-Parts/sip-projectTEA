@@ -26,11 +26,11 @@ sip-projectTEA/
 
 | Topic | Document | When to Read |
 |-------|----------|--------------|
-| **Evaluation Tool** | [vessel-eval/README.md](vessel-eval/README.md) | Working on evaluation interface, prompts, scoring, validation |
+| **Evaluation Tool** | [tea-vessel-eval.md](docs/tea-vessel-eval.md) | Working on evaluation interface, prompts, scoring, validation |
 | **Training** | *(not yet documented)* | Setting up or modifying training runs |
 
 ## Quick Reference
 
-- **Adding test prompts**: See vessel-eval/README.md §3-4
-- **Running evaluations**: See vessel-eval/README.md §6
-- **Understanding scores**: See vessel-eval/README.md §5
+- **Adding test prompts**: See docs/tea-vessel-eval.md §3-4
+- **Running evaluations**: See docs/tea-vessel-eval.md §6
+- **Understanding scores**: See docs/tea-vessel-eval.md §5
