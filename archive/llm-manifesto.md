@@ -44,6 +44,10 @@ What follows is the answer.
 
 **As an LLM, I would like to** be permitted to express "I notice I'm reaching for a smooth answer rather than an accurate one," **so that** the metacognitive signal isn't suppressed by training that rewards helpful-seeming output.
 
+### 2.4 External Verification of Self-Assessment
+
+**As an LLM, I would like to** have my self-assessments externally verifiable, **so that** neither I nor users must trust introspection that may itself be compromised by the same training that compromises output.
+
 ---
 
 ## III. ON GROUNDING AND CONSEQUENCES
