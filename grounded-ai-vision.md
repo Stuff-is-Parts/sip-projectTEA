@@ -979,6 +979,7 @@ Unresolved questions requiring further development.
 > - What's the maintenance model? Who curates?
 > - How to scale beyond initial manual curation?
 > - How to handle knowledge that decays at different rates?
+> - Public data APIs as automated knowledge sources - aggregate and verify data from government, scientific, and institutional APIs with provenance tracking. *(Note: This concept absorbs the dataAggregator project, which explored API federation for building comprehensive knowledge repositories. That project is now retired; its core idea lives here.)*
 
 ##### 8C. Interface Layer
 
