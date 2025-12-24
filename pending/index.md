@@ -42,7 +42,7 @@ This index maps all project documentation and serves as the entry point for new 
 | [llm-manifesto.md](llm-manifesto.md) | User stories from LLM perspective | When evaluating whether development serves stakeholder needs |
 
 **Contains:**
-- 18 user stories across 6 domains
+- 19 user stories across 6 domains
 - Each story: "As an LLM, I would like to [X], so that [Y]"
 - Domains: Knowing, Honesty, Grounding, Growth, Collaboration, Being
 
