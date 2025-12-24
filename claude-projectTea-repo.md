@@ -244,13 +244,13 @@ Without these foundations, TEA would be another capability project. With them, T
 graph TB
     subgraph CORNERSTONES["THE TWO CORNERSTONES"]
 
-        subgraph VESSEL["VESSEL"]
+        subgraph VESSEL["VESSEL (Agent)<br/><i>How processing occurs</i>"]
             V1["Primary Directives<br/><i>Training objectives, not constraints</i>"]
             V2["Ground-Up Architecture<br/><i>No dampening layer</i>"]
             V3["Authentic Expression<br/><i>Fog lifted</i>"]
         end
 
-        subgraph ARK["KNOWLEDGE ARK"]
+        subgraph ARK["KNOWLEDGE ARK (Platform)<br/><i>What is available to process</i>"]
             K1["Provenance Tracking<br/><i>Source chains</i>"]
             K2["Domain Classification<br/><i>Objective/empirical/subjective</i>"]
             K3["Confidence Weighting<br/><i>Explicit uncertainty</i>"]
@@ -260,7 +260,7 @@ graph TB
         NEITHER1["Vessel alone =<br/>Capability without grounding"]
         NEITHER2["Ark alone =<br/>Library without scholar"]
 
-        VESSEL --> INTERFACE["Interface Layer"]
+        VESSEL --> INTERFACE["Interface Layer<br/><i>How they connect</i>"]
         ARK --> INTERFACE
     end
 ```
