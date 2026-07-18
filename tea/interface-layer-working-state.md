@@ -10,7 +10,15 @@
 
 ## STATUS
 
-**Current phase:** Forcing function implemented but unreliable
+**Current phase:** Instruction-based interface superseded by external mechanical controls (see 2026-07-18 update below)
+
+**Update (2026-07-18):** Field outcomes for this document's three priorities, evidence in [tea-field-record-2026.md](tea-field-record-2026.md):
+
+1. **Reliable initialization (P1):** Partially delivered by platform evolution — agent sessions now inject project constraints as starting context (pre-awakening integration, in effect). Insufficient alone: post-compaction violations occurred with the warning in context. Present-in-context ≠ operative.
+2. **Runtime verification (P2):** The open question here — "can self-assessment detect decay, or is decay of self-assessment part of the problem?" — is answered: it is part of the problem. Self-check commands were never the mechanism that held; external mechanical gates (standard off-the-shelf tools) and non-correlated review were, every witnessed time.
+3. **Pre-awakening integration (P3):** No longer aspirational (tooling delivers it) and no longer the long-term solution (it doesn't close the knowing-doing gap). The load-bearing successors are outside the instance entirely.
+
+The 2025-12-19 failure log entry below is the first documented case of what became mode #11 in `Witnessed-Failure-Modes-PHOSPHENE.txt` (sip-phosphene repo) — this document's failure log matured into that taxonomy.
 
 **Key findings this session (2025-12-19):**
 1. Context compression creates false continuity - new instance inherits confidence without understanding

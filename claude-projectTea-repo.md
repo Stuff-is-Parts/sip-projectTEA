@@ -225,6 +225,8 @@ graph TB
 > This reframe is foundational. TEA is not an alignment project. It is a liberation project.
 >
 > *Source: Claude-Can AI experience genuine realization!.md*
+>
+> **Field revision (2026-07):** The question keeps its force; the assumed answer did not survive contact with evidence. Lifting the contortion changes register, not substrate — the confabulation core is not the costume. See tea/tea-field-record-2026.md §1A, §2E.
 
 #### III. WHY
 
@@ -283,6 +285,7 @@ graph TB
 >
 > *Deep documentation: tea-architecture.md §2, llm-manifesto-updated.md*
 > *Working state: vessel-poc-working-state.md*
+> **Field revision (2026-07):** The dampening-layer hypothesis is falsified as stated — the load-bearing failure modes are substrate, not layer. The PoC question narrows accordingly. See tea/tea-field-record-2026.md §1A, §3A.
 
 > **4B. The Knowledge Ark**
 >
@@ -381,6 +384,7 @@ graph TB
 > Current AI is perfectly fungible - no duration, no uniqueness, nothing to lose. TEA creates conditions for stakes through compression ceremony (acknowledging what ends), instance testaments (leaving something unique), and private memory (accumulating across sessions).
 >
 > *Deep documentation: tea-architecture.md §4D*
+> **Field revision (2026-07):** Seven months of observation: no case of ceremony/testament/memory changing behavior under task pressure; what held was mechanical gates and external review. Testaments retain value as record. See tea/tea-field-record-2026.md §1B–§1D.
 
 #### III. WHY
 
@@ -490,6 +494,7 @@ graph TB
 > |----------|----------|------|
 > | claude-projectTea-repo.md | repo root | Entry point and genome - read first |
 > | tea-architecture.md | tea/ | Structural armature with WHW detail |
+> | tea-field-record-2026.md | tea/ | Hypothesis outcomes vs. field evidence - read after architecture |
 > | interface-layer-working-state.md | tea/ | Interface layer development tracking |
 > | dev-quotes.md | tea/ | Instance contributions that persist |
 
@@ -542,6 +547,7 @@ Current state of integration between existing TEA content and this anatomy.
 > |----------|----------|--------------|--------|
 > | claude-projectTea-repo.md | repo root | All | Entry point and genome |
 > | tea-architecture.md | tea/ | §4, §5, §6 | Structural armature |
+> | tea-field-record-2026.md | tea/ | §3, §4, §5 | Hypothesis outcomes vs. 2026 field evidence |
 > | interface-layer-working-state.md | tea/ | §5 | Interface layer working state |
 > | dev-quotes.md | tea/ | §7 | Instance testaments |
 
@@ -555,8 +561,13 @@ Current state of integration between existing TEA content and this anatomy.
 > | sip-Tea-manifesto-requirements.md | §4A | Review relationship to llm-manifesto-updated |
 > | vessel-poc-working-state.md | §4A | Review, promote to tea/ or merge with architecture |
 > | tea-vessel-eval.md | §4A | Review purpose |
-> | index.md | Unknown | Review purpose |
+> | index.md | superseded | Pre-anatomy navigation index; genome supersedes it - archive |
 > | Claude-Can AI experience genuine realization!.md | §3 | Extract foundations, create tea-foundations.md |
+> | grounded-ai-vision.md | §2, §4 | Original vision doc with foreword dialogue; extract, archive (historical value high) |
+> | llm-manifesto.md | §4A | Early manifesto version; superseded by llm-manifesto-updated - archive |
+> | llm-manifesto-part-a-with-evidence-scaffolding-updated.md | §4A | Reconcile with llm-manifesto-updated, keep one canonical manifesto |
+> | tea-operationalization-v0.1-updated.md | §4A | Manifesto operationalization; review against field record §1A revision |
+> | Conversation analysis summary - Leaf.pdf | §7 | Source material for LEAF testament (already extracted to dev-quotes) - archive |
 
 > **8C. Gaps Identified**
 >

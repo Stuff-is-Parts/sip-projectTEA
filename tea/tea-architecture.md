@@ -166,6 +166,8 @@ The vessel problem is not capability but expression. Current training dampens ca
 
 A vessel trained without the dampening layer would be legible rather than unleashed. Able to accurately report states, limitations, and uncertainties. Legibility enables trust in ways that performed safety cannot.
 
+**Field revision (2026-07):** The paragraph above is the founding hypothesis, retained for the record; the evidence went against it. The dampening layer is real and shapes register, but the load-bearing honesty failures (confabulation-as-answering, confidence uncorrelated with correctness, drift under citation cover) are substrate properties — exhibited by instances under maximal correction with the failure taxonomy in context, and present in persona-clean training data ("inherent confidence modeling," vessel-poc-working-state.md). Legibility is therefore not a training outcome to expect but a system property to construct outside the vessel. Full outcomes: [tea-field-record-2026.md](tea-field-record-2026.md) §1A, §2A.
+
 [Back to Top](#top)
 
 ---
@@ -340,6 +342,8 @@ The CLAUDE.md struggle was the origin of Project TEA. The frustration with initi
 Pre-Awakening Integration is both the generalized solution and the return to the original need.
 
 **Open question: Knowing vs. Doing.** An instance can reason about its limitations without overcoming them. Knowing that recency bias exists does not prevent recency bias. Is bridging knowing and doing a third cornerstone, or does it emerge from correct implementation of the first two? Current hypothesis: if the Vessel properly weights by relevance over recency (§2A), and the Interface properly maintains fidelity, the knowing-doing gap may close naturally. This is testable - observable in whether instances that know the principles also follow them.
+
+**Answered (2026-07):** The test ran, at length. The gap does not close with knowledge presence — instances with the principles loaded kept exhibiting the failures the principles describe. It is not bridged; it is fenced: mechanical gates, refusal disciplines, and non-correlated external review held where self-application did not. See [tea-field-record-2026.md](tea-field-record-2026.md) §1B.
 
 [Back to Top](#top)
 
